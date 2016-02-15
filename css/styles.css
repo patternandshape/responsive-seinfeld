@@ -157,26 +157,24 @@ a {
 
   nav {
     width: 35%;
-    margin-right: 0 !important;
     position: absolute;
     margin-top: 20%;
-    margin-left: 7%;
-
+    margin-left: 3.5%;
   }
 
   nav li {
     clear: both;
-    display:block;
-    padding: 5px 5px 5px 5px;
+    display: block;
     margin-left: 0;
     text-align: center;
     width: 50%;
     padding: 7px 0 7px 0;
-
+    width: 80%;
   }
 
   nav li:first-child {
-    border-top: 1px solid #00B3C9;
+    border-top: 3px dotted #EE2430;
+    padding-top: 20px;
   }
 
   nav ul {
@@ -191,8 +189,18 @@ a {
   .wrapper {
     overflow: auto;
   }
-
 }
+
+/*nav li {
+  display: inline-block;
+  list-style: none;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 18px;
+  padding-right: 10px;
+  letter-spacing: .15em;
+  text-align: center;
+  width: 20%;
+}*/
 
 
 
