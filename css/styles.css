@@ -6,9 +6,18 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-color: #ffefd5;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.wrapper {
+  width: 95%;
+}
+
 .logo {
   padding:5%;
-  max-width: 90%;
+  max-width: 85%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -22,13 +31,49 @@ html {
 .column2 {
   float: right;
   width: 60%;
+  text-align: center;
+  margin-left: 0;
+}
+
+nav {
+  padding-top: 6%;
 }
 
 nav li {
   display: inline;
   list-style: none;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 20px;
+  padding: 2%;
+  letter-spacing: .15em;
+}
+
+.villains {
+  font-family: 'Homemade Apple', cursive;
+  color: #00B3C9;
+  font-weight: 100;
 }
 
 a {
   text-decoration: none;
+  color: #00B3C9;
+}
+
+.gallery {
+  overflow: auto;
+}
+
+.gridItem {
+  float: left;
+  width: 20%;
+  padding: 1%;
+}
+
+
+.gridItem img {
+  max-width: 100%;
+}
+
+.footer {
+  clear: both;
 }
