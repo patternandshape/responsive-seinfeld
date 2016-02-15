@@ -1,9 +1,9 @@
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -13,6 +13,33 @@ body {
 
 .wrapper {
   width: 95%;
+}
+
+.lastWord {
+  font-weight: bold;
+}
+
+hr {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  border-bottom: 3px dotted #ffefd5;
+  background: #EE2430;
+}
+
+li hr {
+  width: 100%;
+}
+
+.leftHr {
+  float: left;
+  width: 30%;
+}
+
+.rightHr {
+  float: right;
+  width: 30%;
 }
 
 .logo {
@@ -32,20 +59,34 @@ body {
   float: right;
   width: 60%;
   text-align: center;
-  margin-left: 0;
+}
+
+
+.summary {
+  text-align: left;
 }
 
 nav {
   padding-top: 6%;
 }
 
+nav p {
+  margin: -10px;
+}
+
+nav p:last-child {
+  padding-bottom: 7px;
+}
+
 nav li {
-  display: inline;
+  display: inline-block;
   list-style: none;
   font-family: 'Homemade Apple', cursive;
-  font-size: 20px;
-  padding: 2%;
+  font-size: 18px;
+  padding-right: 10px;
   letter-spacing: .15em;
+  text-align: center;
+  width: 20%;
 }
 
 .villains {
@@ -61,6 +102,7 @@ a {
 
 .gallery {
   overflow: auto;
+  clear: both;
 }
 
 .gridItem {
@@ -72,8 +114,114 @@ a {
 
 .gridItem img {
   max-width: 100%;
+  border: 1px solid #EE2430;
+  border-radius: 7px;
+  box-shadow: 6px 6px #FCD63C;
+}
+
+.gridItem p {
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 0px;
+}
+
+.gridItem p:nth-child(even) {
+    margin-top: 15px;
+}
+
+.gridItem p:last-child {
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .footer {
   clear: both;
+  border-top: 3px dotted #EE2430;
+  margin-top: 5%;
 }
+
+
+/* MEDIA QUERIES
+=========================*/
+
+@media only screen and (max-width: 1280px) {
+
+  .gridItem {
+    width: 33%;
+    display: inline-block;
+  }
+
+  .villains {
+    font-size: 18px;
+  }
+
+  nav {
+    width: 35%;
+    margin-right: 0 !important;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 7%;
+
+  }
+
+  nav li {
+    clear: both;
+    display:block;
+    padding: 5px 5px 5px 5px;
+    margin-left: 0;
+    text-align: center;
+    width: 50%;
+    padding: 7px 0 7px 0;
+
+  }
+
+  nav li:first-child {
+    border-top: 1px solid #00B3C9;
+  }
+
+  nav ul {
+    padding-right: 10px;
+    width: 90%;
+  }
+
+  .column2 {
+    margin-top: 10%;
+  }
+
+  .wrapper {
+    overflow: auto;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* bottom */
