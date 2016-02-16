@@ -19,19 +19,6 @@ body {
   font-weight: bold;
 }
 
-hr {
-  width: 35%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 0;
-  border-bottom: 3px dotted #ffefd5;
-  background: #EE2430;
-}
-
-li hr {
-  width: 100%;
-}
-
 .leftHr {
   float: left;
   width: 30%;
@@ -50,6 +37,10 @@ li hr {
   display: block;
 }
 
+.logoBW {
+  display: none;
+}
+
 .column1 {
   float: left;
   width: 40%;
@@ -61,32 +52,8 @@ li hr {
   text-align: center;
 }
 
-
 .summary {
   text-align: left;
-}
-
-nav {
-  padding-top: 6%;
-}
-
-nav p {
-  margin: -10px;
-}
-
-nav p:last-child {
-  padding-bottom: 7px;
-}
-
-nav li {
-  display: inline-block;
-  list-style: none;
-  font-family: 'Homemade Apple', cursive;
-  font-size: 18px;
-  padding-right: 10px;
-  letter-spacing: .15em;
-  text-align: center;
-  width: 20%;
 }
 
 .villains {
@@ -140,6 +107,46 @@ a {
   margin-top: 5%;
 }
 
+.topHR {
+  display: none;
+}
+
+nav {
+  padding-top: 3%;
+}
+
+nav p {
+  margin: -10px;
+}
+
+nav p:last-child {
+  padding-bottom: 7px;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 18px;
+  padding-right: 10px;
+  letter-spacing: .15em;
+  text-align: center;
+  width: 20%;
+}
+
+li hr {
+  width: 100%;
+}
+
+hr {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  border-bottom: 3px dotted #ffefd5;
+  background: #EE2430;
+}
+
 
 /* MEDIA QUERIES
 =========================*/
@@ -191,16 +198,61 @@ a {
   }
 }
 
-/*nav li {
-  display: inline-block;
-  list-style: none;
-  font-family: 'Homemade Apple', cursive;
-  font-size: 18px;
-  padding-right: 10px;
-  letter-spacing: .15em;
-  text-align: center;
-  width: 20%;
-}*/
+
+@media only screen and (max-width: 730px) {
+  .logo {
+    display: none;
+  }
+
+  .logoBW {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40%;
+  }
+
+  .topHR {
+    display: block;
+    width: 90%;
+  }
+
+  nav {
+    width: 100%;
+    position: inherit;
+    display: inline;
+  }
+
+  nav ul {
+    padding-right: 10px;
+    width: 99%;
+  }
+
+  nav li {
+    margin-top: -15px;
+    display: inline-block;
+    width: 32%;
+  }
+
+  nav li:first-child {
+    border-top: none;
+  }
+
+  .column2 {
+    float: none;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .villains {
+    font-size: 24px;
+  }
+
+h1 {
+  font-size: 24px;
+}
+}
 
 
 
